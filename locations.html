@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Summer soccer training locations in Raleigh NC - Downtown Raleigh, North Raleigh, Cary, Apex, and Wake Forest. Find a convenient training location near you.">
+    <meta name="keywords" content="Soccer Training Locations, Raleigh NC, Cary, Apex, Wake Forest, Soccer Fields">
+    <meta name="author" content="Summer Soccer Training Raleigh">
+    <meta property="og:title" content="Training Locations | Summer Soccer Training Raleigh NC">
+    <meta property="og:description" content="Convenient soccer training locations throughout the Raleigh Triangle area.">
+    <meta property="og:type" content="website">
+    <title>Training Locations | Summer Soccer Training Raleigh NC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .text-primary {
+            color: #FF5A5F;
+        }
+
+        .bg-primary {
+            background-color: #FF5A5F;
+        }
+
+        .border-primary {
+            border-color: #FF5A5F;
+        }
+
+        .text-secondary {
+            color: #1A1A1A;
+        }
+
+        .bg-secondary {
+            background-color: #1A1A1A;
+        }
+
+        .text-accent {
+            color: #FFD166;
+        }
+
+        .bg-accent {
+            background-color: #FFD166;
+        }
+
+        .border-accent {
+            border-color: #FFD166;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid #FF5A5F;
+            color: #FF5A5F;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-outline:hover {
+            background-color: #FF5A5F;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
+        }
+
+        .btn-solid {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #FF5A5F;
+        }
+
+        .btn-solid:hover {
+            background-color: white;
+            color: #FF5A5F;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #FF5A5F, transparent);
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            min-width: 240px;
+            z-index: 1000;
+            margin-top: 0.5rem;
+        }
+        .dropdown-menu.active { display: block; }
+        .dropdown-item {
+            display: block;
+            padding: 12px 20px;
+            color: #374151;
+            text-decoration: none;
+            transition: all 300ms ease-out;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 15px;
+        }
+        .dropdown-item:last-child { border-bottom: none; }
+        .dropdown-item:hover {
+            background-color: #fef2f2;
+            color: #FF5A5F;
+            padding-left: 24px;
+        }
+
+        .btn-primary {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px solid #FF5A5F;
+        }
+        .btn-primary:hover {
+            background-color: #e54950;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 90, 95, 0.4);
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .location-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body class="bg-white text-secondary">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <i class="fas fa-futbol text-3xl text-primary"></i>
+                <span class="text-xl font-bold text-secondary">Summer Soccer Training Raleigh</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
+
+                <div class="relative services-link">
+                    <button type="button" class="services-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Programs <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu services-dropdown">
+                        <a href="programs.html#summer-camps" class="dropdown-item">Summer Camps</a>
+                        <a href="programs.html#skills-training" class="dropdown-item">Skills Training</a>
+                        <a href="programs.html#private-lessons" class="dropdown-item">Private Lessons</a>
+                    </div>
+                </div>
+
+                <div class="relative service-areas-link">
+                    <button type="button" class="areas-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Locations <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu areas-dropdown">
+                        <a href="locations.html#downtown-raleigh" class="dropdown-item">Downtown Raleigh</a>
+                        <a href="locations.html#north-raleigh" class="dropdown-item">North Raleigh</a>
+                        <a href="locations.html#cary" class="dropdown-item">Cary</a>
+                        <a href="locations.html#apex" class="dropdown-item">Apex</a>
+                        <a href="locations.html#wake-forest" class="dropdown-item">Wake Forest</a>
+                    </div>
+                </div>
+
+                <a href="index.html#about" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
+                <a href="index.html#testimonials" class="text-gray-700 hover:text-primary transition-colors font-medium">Testimonials</a>
+                <a href="index.html#contact" class="btn-primary">Register Now</a>
+            </div>
+
+            <button type="button" class="lg:hidden text-gray-700" id="mobile-menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-secondary mb-6">
+                Training <span class="text-primary">Locations</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                We offer training at convenient locations throughout the Raleigh Triangle area. Find the location nearest you and join us this summer!
+            </p>
+        </div>
+    </section>
+
+    <!-- Downtown Raleigh -->
+    <section id="downtown-raleigh" class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Primary Location
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Downtown Raleigh</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Our flagship training facility in the heart of Raleigh features premier turf fields, professional lighting, and all the amenities needed for top-tier soccer training.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-location-dot text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Location</h4>
+                                <p class="text-gray-600">Chavis Park Soccer Fields<br>505 Martin Luther King Jr Blvd, Raleigh, NC 27601</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-clock text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Training Times</h4>
+                                <p class="text-gray-600">Morning: 9:00 AM - 12:00 PM<br>Afternoon: 1:00 PM - 4:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-star text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Features</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="location-badge bg-primary/10 text-primary">Full-Size Turf Fields</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Shade Structures</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Parking Available</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Restrooms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="index.html#contact" class="btn-solid">Register at This Location</a>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=2070&auto=format&fit=crop"
+                         alt="Downtown Raleigh Soccer Training"
+                         class="rounded-2xl shadow-2xl w-full h-[400px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- North Raleigh -->
+    <section id="north-raleigh" class="py-16 md:py-20 bg-gradient-to-r from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <img src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?q=80&w=2070&auto=format&fit=crop"
+                         alt="North Raleigh Soccer Fields"
+                         class="rounded-2xl shadow-2xl w-full h-[400px] object-cover">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Suburban Convenience
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">North Raleigh</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Located in the growing North Raleigh area with easy access from major highways. Perfect for families in North Hills, Midtown, and Falls Lake communities.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-location-dot text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Location</h4>
+                                <p class="text-gray-600">Kentwood Park Athletic Complex<br>6601 Hillsborough St, Raleigh, NC 27606</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-clock text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Training Times</h4>
+                                <p class="text-gray-600">Morning: 8:30 AM - 11:30 AM<br>Evening: 5:00 PM - 7:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-star text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Features</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="location-badge bg-accent/20 text-accent">Multiple Fields</span>
+                                    <span class="location-badge bg-accent/20 text-accent">Covered Pavilion</span>
+                                    <span class="location-badge bg-accent/20 text-accent">Ample Parking</span>
+                                    <span class="location-badge bg-accent/20 text-accent">Playground Nearby</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="index.html#contact" class="btn-solid">Register at This Location</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cary -->
+    <section id="cary" class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Soccer Hub
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Cary</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Train where the pros train! Our Cary location is near the home of North Carolina Courage and provides access to world-class soccer facilities.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-location-dot text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Location</h4>
+                                <p class="text-gray-600">WakeMed Soccer Park<br>201 Soccer Park Dr, Cary, NC 27511</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-clock text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Training Times</h4>
+                                <p class="text-gray-600">Morning: 9:00 AM - 12:00 PM<br>Afternoon: 2:00 PM - 5:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-star text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Features</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="location-badge bg-primary/10 text-primary">Professional Stadium</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Practice Fields</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Concessions</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Indoor Facilities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="index.html#contact" class="btn-solid">Register at This Location</a>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=2049&auto=format&fit=crop"
+                         alt="Cary Soccer Training Facility"
+                         class="rounded-2xl shadow-2xl w-full h-[400px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apex -->
+    <section id="apex" class="py-16 md:py-20 bg-gradient-to-r from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?q=80&w=2071&auto=format&fit=crop"
+                         alt="Apex Soccer Fields"
+                         class="rounded-2xl shadow-2xl w-full h-[400px] object-cover">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Family-Friendly
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Apex</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Our Apex location offers a family-friendly environment with beautiful fields and excellent facilities, perfect for players from the Southwest Wake County area.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-location-dot text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Location</h4>
+                                <p class="text-gray-600">Apex Nature Park Soccer Fields<br>2600 Evans Rd, Apex, NC 27502</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-clock text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Training Times</h4>
+                                <p class="text-gray-600">Morning: 9:00 AM - 12:00 PM<br>Afternoon: 1:00 PM - 4:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-star text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Features</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="location-badge bg-accent/20 text-accent">Natural Grass Fields</span>
+                                    <span class="location-badge bg-accent/20 text-accent">Walking Trails</span>
+                                    <span class="location-badge bg-accent/20 text-accent">Picnic Areas</span>
+                                    <span class="location-badge bg-accent/20 text-accent">Nature Setting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="index.html#contact" class="btn-solid">Register at This Location</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wake Forest -->
+    <section id="wake-forest" class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Newest Location
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Wake Forest</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Our newest location serving the rapidly growing Wake Forest community and surrounding areas. Modern facilities in a welcoming atmosphere.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-location-dot text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Location</h4>
+                                <p class="text-gray-600">Smith Creek Soccer Center<br>1000 Smith Creek Pkwy, Wake Forest, NC 27587</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-clock text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Training Times</h4>
+                                <p class="text-gray-600">Morning: 8:30 AM - 11:30 AM<br>Evening: 4:30 PM - 7:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-star text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Features</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="location-badge bg-primary/10 text-primary">New Turf Fields</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Covered Seating</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Large Parking Lot</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Modern Amenities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="index.html#contact" class="btn-solid">Register at This Location</a>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=2070&auto=format&fit=crop"
+                         alt="Wake Forest Soccer Training"
+                         class="rounded-2xl shadow-2xl w-full h-[400px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Overview -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Find Your Nearest Location</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    We're conveniently located throughout the Triangle area to serve families across Raleigh, Cary, Apex, and Wake Forest.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Quick Location Cards -->
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Downtown</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Chavis Park Soccer Fields<br><span class="text-sm">Central Raleigh</span></p>
+                    <a href="#downtown-raleigh" class="text-primary hover:underline font-semibold">View Details →</a>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-xl text-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">North Raleigh</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Kentwood Park Complex<br><span class="text-sm">North Hills Area</span></p>
+                    <a href="#north-raleigh" class="text-primary hover:underline font-semibold">View Details →</a>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Cary</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">WakeMed Soccer Park<br><span class="text-sm">Professional Facilities</span></p>
+                    <a href="#cary" class="text-primary hover:underline font-semibold">View Details →</a>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-xl text-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Apex</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Apex Nature Park<br><span class="text-sm">Southwest Wake County</span></p>
+                    <a href="#apex" class="text-primary hover:underline font-semibold">View Details →</a>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Wake Forest</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Smith Creek Soccer Center<br><span class="text-sm">Northeast Area</span></p>
+                    <a href="#wake-forest" class="text-primary hover:underline font-semibold">View Details →</a>
+                </div>
+
+                <div class="bg-gradient-to-br from-primary to-accent text-white rounded-lg p-6 shadow-md flex flex-col justify-center items-center text-center">
+                    <i class="fas fa-question-circle text-4xl mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">Not Sure?</h3>
+                    <p class="mb-4 text-sm opacity-90">Contact us and we'll help you find the perfect location</p>
+                    <a href="index.html#contact" class="bg-white text-primary hover:bg-gray-100 px-4 py-2 rounded font-semibold transition-all">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-r from-primary to-accent text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Training?</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Choose your location and register today! Limited spots available at all locations.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#contact" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg">
+                    Register Now
+                </a>
+                <a href="programs.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+                    View Programs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <span class="font-semibold text-lg">Summer Soccer Raleigh</span>
+                    </div>
+                    <p class="text-gray-300 font-light text-sm leading-relaxed">
+                        Elite youth soccer training and summer camps in Raleigh, NC. Developing confident, skilled players since day one.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="programs.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Programs</a></li>
+                        <li><a href="locations.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Locations</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Register</a></li>
+                        <li><a href="index.html#testimonials" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <p class="text-gray-300 font-light text-sm">
+                            <span class="block">Serving Raleigh & Triangle Area</span>
+                            <span class="block">Raleigh, NC 27601</span>
+                        </p>
+                        <p class="text-gray-300 font-light text-sm">
+                            <a href="mailto:info@summersoccerraleigh.com" class="hover:text-primary transition-colors duration-300">info@summersoccerraleigh.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="section-divider mb-8"></div>
+
+            <!-- Bottom Footer -->
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <p class="text-gray-400 font-light text-sm mb-4 md:mb-0">
+                    &copy; 2026 Summer Soccer Training Raleigh. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dropdowns -->
+    <script>
+        // Services dropdown
+        const servicesBtn = document.querySelector('.services-dropdown-btn');
+        const servicesDropdown = document.querySelector('.services-dropdown');
+        servicesBtn.addEventListener('click', () => {
+            servicesDropdown.classList.toggle('active');
+            areasDropdown.classList.remove('active');
+        });
+
+        // Service areas dropdown
+        const areasBtn = document.querySelector('.areas-dropdown-btn');
+        const areasDropdown = document.querySelector('.areas-dropdown');
+        areasBtn.addEventListener('click', () => {
+            areasDropdown.classList.toggle('active');
+            servicesDropdown.classList.remove('active');
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.services-link') && !e.target.closest('.service-areas-link')) {
+                servicesDropdown.classList.remove('active');
+                areasDropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
