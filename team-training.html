@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team soccer training in Raleigh NC - Complete team development, tactical training, and team building for competitive youth soccer teams.">
+    <meta name="keywords" content="Team Soccer Training, Team Coaching, Youth Soccer Teams, Tactical Training, Raleigh NC">
+    <meta name="author" content="Summer Soccer Training Raleigh">
+    <meta property="og:title" content="Team Training | Summer Soccer Training Raleigh NC">
+    <meta property="og:description" content="Professional team training services to elevate your entire squad's performance.">
+    <meta property="og:type" content="website">
+    <title>Team Training | Summer Soccer Training Raleigh NC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .text-primary {
+            color: #FF5A5F;
+        }
+
+        .bg-primary {
+            background-color: #FF5A5F;
+        }
+
+        .border-primary {
+            border-color: #FF5A5F;
+        }
+
+        .text-secondary {
+            color: #1A1A1A;
+        }
+
+        .bg-secondary {
+            background-color: #1A1A1A;
+        }
+
+        .text-accent {
+            color: #FFD166;
+        }
+
+        .bg-accent {
+            background-color: #FFD166;
+        }
+
+        .card-hover {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #FF5A5F, transparent);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 90, 95, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card-hover:hover .feature-icon {
+            background-color: #FF5A5F;
+            color: white;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            min-width: 240px;
+            z-index: 1000;
+            margin-top: 0.5rem;
+        }
+        .dropdown-menu.active { display: block; }
+        .dropdown-item {
+            display: block;
+            padding: 12px 20px;
+            color: #374151;
+            text-decoration: none;
+            transition: all 300ms ease-out;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 15px;
+        }
+        .dropdown-item:last-child { border-bottom: none; }
+        .dropdown-item:hover {
+            background-color: #fef2f2;
+            color: #FF5A5F;
+            padding-left: 24px;
+        }
+
+        .btn-primary {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px solid #FF5A5F;
+        }
+        .btn-primary:hover {
+            background-color: #e54950;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 90, 95, 0.4);
+        }
+
+        .btn-solid {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #FF5A5F;
+            text-decoration: none;
+        }
+
+        .btn-solid:hover {
+            background-color: white;
+            color: #FF5A5F;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-white text-secondary">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <i class="fas fa-futbol text-3xl text-primary"></i>
+                <span class="text-xl font-bold text-secondary">Summer Soccer Training Raleigh</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
+
+                <div class="relative services-link">
+                    <button type="button" class="services-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Programs <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu services-dropdown">
+                        <a href="group-training.html" class="dropdown-item">Group Training</a>
+                        <a href="team-training.html" class="dropdown-item">Team Training</a>
+                        <a href="clinics.html" class="dropdown-item">Clinics</a>
+                    </div>
+                </div>
+
+                <div class="relative service-areas-link">
+                    <button type="button" class="areas-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Locations <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu areas-dropdown">
+                        <a href="downtown-raleigh.html" class="dropdown-item">Downtown Raleigh</a>
+                        <a href="north-raleigh.html" class="dropdown-item">North Raleigh</a>
+                        <a href="cary.html" class="dropdown-item">Cary</a>
+                        <a href="apex.html" class="dropdown-item">Apex</a>
+                        <a href="wake-forest.html" class="dropdown-item">Wake Forest</a>
+                    </div>
+                </div>
+
+                <a href="index.html#about" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
+                <a href="index.html#testimonials" class="text-gray-700 hover:text-primary transition-colors font-medium">Testimonials</a>
+                <a href="index.html#contact" class="btn-primary">Register Now</a>
+            </div>
+
+            <button type="button" class="lg:hidden text-gray-700" id="mobile-menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-primary/5 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        <i class="fas fa-shield-alt mr-2"></i>Most Popular
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-secondary mb-6">
+                        Team <span class="text-primary">Training</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
+                        Elevate your entire team's performance with customized training sessions designed specifically for your squad. Build team chemistry, develop tactical awareness, and prepare for competitive success together.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="index.html#contact" class="btn-primary text-center">Book Team Session</a>
+                        <a href="#packages" class="btn-solid text-center">View Packages</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?q=80&w=2071&auto=format&fit=crop"
+                         alt="Team Soccer Training"
+                         class="rounded-2xl shadow-2xl w-full h-[500px] object-cover">
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-6 border-2 border-primary/20">
+                        <div class="text-3xl font-bold text-primary mb-1">100%</div>
+                        <div class="text-sm text-gray-600">Customized</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                    Why Choose <span class="text-primary">Team Training</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Transform your team from a group of players into a cohesive, winning unit
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                    <div class="feature-icon mx-auto mb-4">
+                        <i class="fas fa-clipboard-list text-xl text-primary"></i>
+                    </div>
+                    <h4 class="font-semibold text-secondary mb-2">Custom Curriculum</h4>
+                    <p class="text-sm text-gray-600">Training designed for your team's specific needs and goals</p>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                    <div class="feature-icon mx-auto mb-4">
+                        <i class="fas fa-brain text-xl text-primary"></i>
+                    </div>
+                    <h4 class="font-semibold text-secondary mb-2">Tactical Development</h4>
+                    <p class="text-sm text-gray-600">Formation work, set pieces, and game strategy</p>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                    <div class="feature-icon mx-auto mb-4">
+                        <i class="fas fa-link text-xl text-primary"></i>
+                    </div>
+                    <h4 class="font-semibold text-secondary mb-2">Team Chemistry</h4>
+                    <p class="text-sm text-gray-600">Build communication and trust between players</p>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                    <div class="feature-icon mx-auto mb-4">
+                        <i class="fas fa-calendar-check text-xl text-primary"></i>
+                    </div>
+                    <h4 class="font-semibold text-secondary mb-2">Flexible Scheduling</h4>
+                    <p class="text-sm text-gray-600">Sessions scheduled around your team's availability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Focus Areas -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                    What We <span class="text-primary">Cover</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chess-board text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Tactical Organization</h3>
+                    <p class="text-gray-600">Formations, positioning, shape, and defensive/offensive transitions.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-comments text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Communication</h3>
+                    <p class="text-gray-600">Developing on-field communication systems and leadership skills.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-futbol text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Set Pieces</h3>
+                    <p class="text-gray-600">Corners, free kicks, throw-ins, and penalty situations.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-sync-alt text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Pressing & Counter-Pressing</h3>
+                    <p class="text-gray-600">Coordinated pressure and winning the ball back quickly.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-bar text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Performance Analysis</h3>
+                    <p class="text-gray-600">Video review and data-driven insights for improvement.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-trophy text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Competition Prep</h3>
+                    <p class="text-gray-600">Pre-season preparation and opponent-specific strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                    Training <span class="text-primary">Packages</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Choose the package that fits your team's needs and season schedule
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white border-2 border-gray-200 rounded-lg p-8 shadow-md text-center">
+                    <div class="text-4xl mb-4"><i class="fas fa-bolt text-accent"></i></div>
+                    <h3 class="text-2xl font-bold text-secondary mb-2">Single Session</h3>
+                    <p class="text-gray-600 mb-6">Perfect for one-time team development or pre-game preparation</p>
+                    <ul class="text-left space-y-2 mb-6 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i>90-minute session</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Full team assessment</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Customized focus areas</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Coach consultation</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn-solid w-full text-center">Book Session</a>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-primary to-accent text-white border-2 border-primary rounded-lg p-8 shadow-2xl text-center transform md:scale-105">
+                    <div class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                        MOST POPULAR
+                    </div>
+                    <div class="text-4xl mb-4"><i class="fas fa-star"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Monthly Package</h3>
+                    <p class="mb-6 opacity-90">Ideal for consistent development throughout the season</p>
+                    <ul class="text-left space-y-2 mb-6 text-sm">
+                        <li><i class="fas fa-check mr-2"></i>4 x 90-minute sessions/month</li>
+                        <li><i class="fas fa-check mr-2"></i>Progressive curriculum</li>
+                        <li><i class="fas fa-check mr-2"></i>Video analysis included</li>
+                        <li><i class="fas fa-check mr-2"></i>Weekly coach check-ins</li>
+                    </ul>
+                    <a href="index.html#contact" class="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded font-semibold w-full inline-block text-center transition-all">Get Started</a>
+                </div>
+
+                <div class="card-hover bg-white border-2 border-gray-200 rounded-lg p-8 shadow-md text-center">
+                    <div class="text-4xl mb-4"><i class="fas fa-fire text-primary"></i></div>
+                    <h3 class="text-2xl font-bold text-secondary mb-2">Season Package</h3>
+                    <p class="text-gray-600 mb-6">Complete team transformation for competitive success</p>
+                    <ul class="text-left space-y-2 mb-6 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i>12+ sessions over 3 months</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Full tactical development</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Performance tracking</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Priority scheduling</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn-solid w-full text-center">Best Value</a>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-gradient-to-r from-gray-50 to-white rounded-xl p-8 text-center">
+                <h3 class="text-2xl font-bold text-secondary mb-4">Custom Team Solutions</h3>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                    Need something different? We can create a custom training plan tailored to your team's specific goals, schedule, and budget.
+                </p>
+                <a href="index.html#contact" class="btn-primary">Contact Us for Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ideal For Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-r from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                    Ideal <span class="text-primary">For</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                    <i class="fas fa-school text-4xl text-primary mb-4"></i>
+                    <h4 class="font-bold text-secondary mb-2">Recreational Teams</h4>
+                    <p class="text-sm text-gray-600">Take your rec team to the next level</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                    <i class="fas fa-medal text-4xl text-primary mb-4"></i>
+                    <h4 class="font-bold text-secondary mb-2">Competitive Clubs</h4>
+                    <p class="text-sm text-gray-600">Gain an edge on the competition</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                    <i class="fas fa-graduation-cap text-4xl text-primary mb-4"></i>
+                    <h4 class="font-bold text-secondary mb-2">High School Teams</h4>
+                    <p class="text-sm text-gray-600">Prepare for district and state playoffs</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                    <i class="fas fa-calendar-day text-4xl text-primary mb-4"></i>
+                    <h4 class="font-bold text-secondary mb-2">Tryout Prep</h4>
+                    <p class="text-sm text-gray-600">Get ready for upcoming tryouts together</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-r from-primary to-accent text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Team?</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Contact us today to discuss your team's goals and schedule your first training session.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#contact" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg">
+                    Book Team Training
+                </a>
+                <a href="programs.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+                    View All Programs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <span class="font-semibold text-lg">Summer Soccer Raleigh</span>
+                    </div>
+                    <p class="text-gray-300 font-light text-sm leading-relaxed">
+                        Elite youth soccer training in Raleigh, NC. Developing confident, skilled players since day one.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="programs.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Programs</a></li>
+                        <li><a href="locations.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Locations</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Register</a></li>
+                        <li><a href="index.html#testimonials" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <p class="text-gray-300 font-light text-sm">
+                            <span class="block">Serving Raleigh & Triangle Area</span>
+                            <span class="block">Raleigh, NC 27601</span>
+                        </p>
+                        <p class="text-gray-300 font-light text-sm">
+                            <a href="mailto:info@summersoccerraleigh.com" class="hover:text-primary transition-colors duration-300">info@summersoccerraleigh.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider mb-8"></div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <p class="text-gray-400 font-light text-sm mb-4 md:mb-0">
+                    &copy; 2026 Summer Soccer Training Raleigh. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dropdowns -->
+    <script>
+        const servicesBtn = document.querySelector('.services-dropdown-btn');
+        const servicesDropdown = document.querySelector('.services-dropdown');
+        servicesBtn.addEventListener('click', () => {
+            servicesDropdown.classList.toggle('active');
+            areasDropdown.classList.remove('active');
+        });
+
+        const areasBtn = document.querySelector('.areas-dropdown-btn');
+        const areasDropdown = document.querySelector('.areas-dropdown');
+        areasBtn.addEventListener('click', () => {
+            areasDropdown.classList.toggle('active');
+            servicesDropdown.classList.remove('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.services-link') && !e.target.closest('.service-areas-link')) {
+                servicesDropdown.classList.remove('active');
+                areasDropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
