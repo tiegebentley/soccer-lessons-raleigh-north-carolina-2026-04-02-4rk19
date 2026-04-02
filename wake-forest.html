@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Summer soccer training in Wake Forest - Programs for all ages and skill levels. Expert coaching at Smith Creek Soccer Center.">
+    <title>Wake Forest Soccer Training | Summer Soccer Training Raleigh NC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        html { scroll-behavior: smooth; }
+        .text-primary { color: #FF5A5F; }
+        .bg-primary { background-color: #FF5A5F; }
+        .border-primary { border-color: #FF5A5F; }
+        .text-secondary { color: #1A1A1A; }
+        .bg-secondary { background-color: #1A1A1A; }
+        .text-accent { color: #FFD166; }
+        .bg-accent { background-color: #FFD166; }
+        .btn-solid {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #FF5A5F;
+        }
+        .btn-solid:hover {
+            background-color: white;
+            color: #FF5A5F;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
+        }
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid #FF5A5F;
+            color: #FF5A5F;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+        .btn-outline:hover {
+            background-color: #FF5A5F;
+            color: white;
+            transform: scale(1.05);
+        }
+        .card-hover {
+            transition: all 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            min-width: 240px;
+            z-index: 1000;
+            margin-top: 0.5rem;
+        }
+        .dropdown-menu.active { display: block; }
+        .dropdown-item {
+            display: block;
+            padding: 12px 20px;
+            color: #374151;
+            text-decoration: none;
+            transition: all 300ms ease-out;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 15px;
+        }
+        .dropdown-item:last-child { border-bottom: none; }
+        .dropdown-item:hover {
+            background-color: #fef2f2;
+            color: #FF5A5F;
+            padding-left: 24px;
+        }
+        .btn-primary {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px solid #FF5A5F;
+        }
+        .btn-primary:hover {
+            background-color: #e54950;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 90, 95, 0.4);
+        }
+        .location-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        nav button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-white text-secondary">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <i class="fas fa-futbol text-3xl text-primary"></i>
+                <span class="text-xl font-bold text-secondary">Summer Soccer Training Raleigh</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
+
+                <div class="relative services-link">
+                    <button type="button" class="services-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Programs <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu services-dropdown">
+                        <a href="programs.html#summer-camps" class="dropdown-item">Summer Camps</a>
+                        <a href="programs.html#skills-training" class="dropdown-item">Skills Training</a>
+                        <a href="programs.html#private-lessons" class="dropdown-item">Private Lessons</a>
+                    </div>
+                </div>
+
+                <div class="relative service-areas-link">
+                    <button type="button" class="areas-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Locations <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu areas-dropdown">
+                        <a href="downtown-raleigh.html" class="dropdown-item">Downtown Raleigh</a>
+                        <a href="north-raleigh.html" class="dropdown-item">North Raleigh</a>
+                        <a href="cary.html" class="dropdown-item">Cary</a>
+                        <a href="apex.html" class="dropdown-item">Apex</a>
+                        <a href="wake-forest.html" class="dropdown-item">Wake Forest</a>
+                    </div>
+                </div>
+
+                <a href="index.html#about" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
+                <a href="index.html#testimonials" class="text-gray-700 hover:text-primary transition-colors font-medium">Testimonials</a>
+                <a href="index.html#contact" class="btn-primary">Register Now</a>
+            </div>
+
+            <button type="button" class="lg:hidden text-gray-700" id="mobile-menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <div class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Newest Location
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-secondary mb-4">
+                    Wake Forest <span class="text-primary">Soccer Training</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Our newest location serving the rapidly growing Wake Forest community with modern facilities in a welcoming atmosphere.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-secondary mb-6">Training Location</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-location-dot text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Facility</h4>
+                                <p class="text-gray-600">Smith Creek Soccer Center<br>1000 Smith Creek Pkwy, Wake Forest, NC 27587</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-clock text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Training Times</h4>
+                                <p class="text-gray-600">Morning: 8:30 AM - 11:30 AM<br>Evening: 4:30 PM - 7:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-star text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Features</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="location-badge bg-primary/10 text-primary">New Turf Fields</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Covered Seating</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Large Parking Lot</span>
+                                    <span class="location-badge bg-primary/10 text-primary">Modern Amenities</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="index.html#contact" class="btn-solid">Register at This Location</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=2070&auto=format&fit=crop"
+                         alt="Wake Forest Soccer Training"
+                         class="rounded-2xl shadow-2xl w-full h-[400px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Available Section -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                    Programs Available in Wake Forest
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    All our comprehensive training programs are available at this location
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Summer Camps -->
+                <div class="card-hover bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-8 shadow-md">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-campground"></i></div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Summer Camps</h3>
+                    <p class="text-gray-600 mb-6">
+                        Week-long intensive training camps designed to transform players in just five days. Ages 6-17 with skill-based grouping.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i>Monday - Friday format</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Half-day or full-day options</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>4:1 player-to-coach ratio</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>All skill levels welcome</li>
+                    </ul>
+                    <a href="programs.html#summer-camps" class="btn-outline w-full text-center">Learn More</a>
+                </div>
+
+                <!-- Skills Training -->
+                <div class="card-hover bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-8 shadow-md">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-dumbbell"></i></div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Skills Training</h3>
+                    <p class="text-gray-600 mb-6">
+                        8-week progressive curriculum focusing on technical skills, tactical awareness, and position-specific development.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i>Tuesday/Thursday or Saturday</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Progressive 8-week program</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Position-specific training</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Game situation practice</li>
+                    </ul>
+                    <a href="programs.html#skills-training" class="btn-outline w-full text-center">Learn More</a>
+                </div>
+
+                <!-- Private Lessons -->
+                <div class="card-hover bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-8 shadow-md">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-user-graduate"></i></div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Private Lessons</h3>
+                    <p class="text-gray-600 mb-6">
+                        Personalized 1-on-1 coaching tailored to your specific goals and areas for improvement with video analysis.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i>100% customized training</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Flexible scheduling</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Professional video analysis</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Multiple package options</li>
+                    </ul>
+                    <a href="programs.html#private-lessons" class="btn-outline w-full text-center">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neighborhoods Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-r from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                    Neighborhoods We Serve
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Convenient training for families throughout the Wake Forest area
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-8 shadow-md">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Heritage</h3>
+                    <p class="text-gray-600 mb-4">Master-planned community combining traditional neighborhood design with modern amenities and easy access to soccer training.</p>
+                    <a href="wake-forest/heritage.html" class="text-primary hover:underline font-semibold">
+                        Explore Heritage →
+                    </a>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-8 shadow-md">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Downtown Wake Forest</h3>
+                    <p class="text-gray-600 mb-4">Historic downtown area with local charm, shops, and restaurants, minutes from Smith Creek Soccer Center training facilities.</p>
+                    <a href="wake-forest/downtown-wake-forest.html" class="text-primary hover:underline font-semibold">
+                        Explore Downtown Wake Forest →
+                    </a>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-lg p-8 shadow-md">
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Smith Creek</h3>
+                    <p class="text-gray-600 mb-4">Modern residential development surrounding the Smith Creek Soccer Center, offering the ultimate convenience for training families.</p>
+                    <a href="wake-forest/smith-creek-community.html" class="text-primary hover:underline font-semibold">
+                        Explore Smith Creek →
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-r from-primary to-accent text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Join Us in Wake Forest?</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Register today and start your journey to soccer excellence!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#contact" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg">
+                    Register Now
+                </a>
+                <a href="programs.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+                    View All Programs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <span class="font-semibold text-lg">Summer Soccer Raleigh</span>
+                    </div>
+                    <p class="text-gray-300 font-light text-sm leading-relaxed">
+                        Elite youth soccer training and summer camps in Raleigh, NC. Developing confident, skilled players since day one.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="programs.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Programs</a></li>
+                        <li><a href="locations.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Locations</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Register</a></li>
+                        <li><a href="index.html#testimonials" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <p class="text-gray-300 font-light text-sm">
+                            <span class="block">Serving Raleigh & Triangle Area</span>
+                            <span class="block">Raleigh, NC 27601</span>
+                        </p>
+                        <p class="text-gray-300 font-light text-sm">
+                            <a href="mailto:info@summersoccerraleigh.com" class="hover:text-primary transition-colors duration-300">info@summersoccerraleigh.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <p class="text-gray-400 font-light text-sm mb-4 md:mb-0">
+                        &copy; 2026 Summer Soccer Training Raleigh. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const servicesBtn = document.querySelector('.services-dropdown-btn');
+        const servicesDropdown = document.querySelector('.services-dropdown');
+        const areasBtn = document.querySelector('.areas-dropdown-btn');
+        const areasDropdown = document.querySelector('.areas-dropdown');
+
+        servicesBtn.addEventListener('click', () => {
+            servicesDropdown.classList.toggle('active');
+            areasDropdown.classList.remove('active');
+        });
+
+        areasBtn.addEventListener('click', () => {
+            areasDropdown.classList.toggle('active');
+            servicesDropdown.classList.remove('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.services-link') && !e.target.closest('.service-areas-link')) {
+                servicesDropdown.classList.remove('active');
+                areasDropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

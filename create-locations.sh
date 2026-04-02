@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# This script will be used to create the location page structure
+# We'll create it as a reference but build the pages with Claude Code tools
+
+echo "Location structure:"
+echo "1. downtown-raleigh.html"
+echo "   - downtown-raleigh/glenwood-south.html"
+echo "   - downtown-raleigh/cameron-village.html"
+echo "   - downtown-raleigh/person-street.html"
+echo ""
+echo "2. north-raleigh.html"
+echo "   - north-raleigh/north-hills.html"
+echo "   - north-raleigh/midtown.html"
+echo "   - north-raleigh/falls-lake.html"
+echo ""
+echo "3. cary.html"
+echo "   - cary/downtown-cary.html"
+echo "   - cary/preston.html"
+echo "   - cary/west-cary.html"
+echo ""
+echo "4. apex.html"
+echo "   - apex/downtown-apex.html"
+echo "   - apex/kelly-road.html"
+echo "   - apex/scotts-mill.html"
+echo ""
+echo "5. wake-forest.html"
+echo "   - wake-forest/heritage.html"
+echo "   - wake-forest/downtown-wake-forest.html"
+echo "   - wake-forest/smith-creek-community.html"

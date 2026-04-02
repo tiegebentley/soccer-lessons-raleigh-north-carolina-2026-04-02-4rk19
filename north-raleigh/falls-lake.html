@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Summer soccer training in Falls Lake, North Raleigh - Convenient youth soccer programs near you.">
+    <title>Falls Lake Soccer Training | North Raleigh | Summer Soccer Raleigh NC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        html { scroll-behavior: smooth; }
+        .text-primary { color: #FF5A5F; }
+        .bg-primary { background-color: #FF5A5F; }
+        .text-secondary { color: #1A1A1A; }
+        .bg-secondary { background-color: #1A1A1A; }
+        .text-accent { color: #FFD166; }
+        .btn-solid {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            border: 2px solid #FF5A5F;
+        }
+        .btn-solid:hover {
+            background-color: white;
+            color: #FF5A5F;
+            transform: scale(1.05);
+        }
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid #FF5A5F;
+            color: #FF5A5F;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        .btn-outline:hover {
+            background-color: #FF5A5F;
+            color: white;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            min-width: 240px;
+            z-index: 1000;
+            margin-top: 0.5rem;
+        }
+        .dropdown-menu.active { display: block; }
+        .dropdown-item {
+            display: block;
+            padding: 12px 20px;
+            color: #374151;
+            text-decoration: none;
+            transition: all 300ms;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .dropdown-item:last-child { border-bottom: none; }
+        .dropdown-item:hover {
+            background-color: #fef2f2;
+            color: #FF5A5F;
+            padding-left: 24px;
+        }
+        .btn-primary {
+            background-color: #FF5A5F;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            border: 2px solid #FF5A5F;
+        }
+        .btn-primary:hover {
+            background-color: #e54950;
+            transform: translateY(-2px);
+        }
+        nav button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-white text-secondary">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-3">
+                <i class="fas fa-futbol text-3xl text-primary"></i>
+                <span class="text-xl font-bold text-secondary">Summer Soccer Training Raleigh</span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
+                <div class="relative services-link">
+                    <button type="button" class="services-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Programs <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu services-dropdown">
+                        <a href="../programs.html#summer-camps" class="dropdown-item">Summer Camps</a>
+                        <a href="../programs.html#skills-training" class="dropdown-item">Skills Training</a>
+                        <a href="../programs.html#private-lessons" class="dropdown-item">Private Lessons</a>
+                    </div>
+                </div>
+                <div class="relative service-areas-link">
+                    <button type="button" class="areas-dropdown-btn text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+                        Locations <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu areas-dropdown">
+                        <a href="../downtown-raleigh.html" class="dropdown-item">Downtown Raleigh</a>
+                        <a href="../north-raleigh.html" class="dropdown-item">North Raleigh</a>
+                        <a href="../cary.html" class="dropdown-item">Cary</a>
+                        <a href="../apex.html" class="dropdown-item">Apex</a>
+                        <a href="../wake-forest.html" class="dropdown-item">Wake Forest</a>
+                    </div>
+                </div>
+                <a href="../index.html#about" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
+                <a href="../index.html#testimonials" class="text-gray-700 hover:text-primary transition-colors font-medium">Testimonials</a>
+                <a href="../index.html#contact" class="btn-primary">Register Now</a>
+            </div>
+            <button type="button" class="lg:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="py-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-2 text-sm text-gray-600">
+                <a href="../index.html" class="hover:text-primary">Home</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="../north-raleigh.html" class="hover:text-primary">North Raleigh</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-primary">Falls Lake</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-secondary mb-4">
+                Falls Lake <span class="text-primary">Soccer Training</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+                Scenic lakeside community providing a perfect balance of nature and convenience for active families and young athletes.
+            </p>
+            <a href="../index.html#contact" class="btn-solid">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Community Highlights -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-secondary mb-6">Why Train in Falls Lake?</h2>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i>Lakeside setting</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Nature trails</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Outdoor recreation</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Quiet neighborhoods</li>
+                        
+                    </ul>
+                    <div class="mt-8">
+                        <a href="../north-raleigh.html" class="btn-outline">
+                            <i class="fas fa-arrow-left mr-2"></i>Back to North Raleigh
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?q=80&w=2070&auto=format&fit=crop"
+                         alt="Falls Lake Community"
+                         class="rounded-2xl shadow-2xl w-full h-[400px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Available -->
+    <section class="py-16 md:py-20 bg-gradient-to-r from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                    Programs Available
+                </h2>
+                <p class="text-lg text-gray-600">
+                    All training programs are available for Falls Lake residents
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-secondary mb-3">
+                        <i class="fas fa-campground text-primary mr-2"></i>Summer Camps
+                    </h3>
+                    <p class="text-gray-600 mb-4">Week-long intensive training camps for all ages and skill levels.</p>
+                    <a href="../programs.html#summer-camps" class="text-primary hover:underline font-semibold">Learn More →</a>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-secondary mb-3">
+                        <i class="fas fa-dumbbell text-primary mr-2"></i>Skills Training
+                    </h3>
+                    <p class="text-gray-600 mb-4">8-week progressive program with position-specific development.</p>
+                    <a href="../programs.html#skills-training" class="text-primary hover:underline font-semibold">Learn More →</a>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-secondary mb-3">
+                        <i class="fas fa-user-graduate text-primary mr-2"></i>Private Lessons
+                    </h3>
+                    <p class="text-gray-600 mb-4">Personalized 1-on-1 coaching with video analysis and custom plans.</p>
+                    <a href="../programs.html#private-lessons" class="text-primary hover:underline font-semibold">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-r from-primary to-accent text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Join Falls Lake Players Today!</h2>
+            <p class="text-lg mb-8 opacity-90">
+                Start your soccer journey with expert coaching and comprehensive training programs
+            </p>
+            <a href="../index.html#contact" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg inline-block">
+                Register Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; 2026 Summer Soccer Training Raleigh. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const servicesBtn = document.querySelector('.services-dropdown-btn');
+        const servicesDropdown = document.querySelector('.services-dropdown');
+        const areasBtn = document.querySelector('.areas-dropdown-btn');
+        const areasDropdown = document.querySelector('.areas-dropdown');
+
+        servicesBtn.addEventListener('click', () => {
+            servicesDropdown.classList.toggle('active');
+            areasDropdown.classList.remove('active');
+        });
+
+        areasBtn.addEventListener('click', () => {
+            areasDropdown.classList.toggle('active');
+            servicesDropdown.classList.remove('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.services-link') && !e.target.closest('.service-areas-link')) {
+                servicesDropdown.classList.remove('active');
+                areasDropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
