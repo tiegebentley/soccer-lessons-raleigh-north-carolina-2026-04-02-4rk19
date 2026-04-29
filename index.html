@@ -260,7 +260,7 @@
 
                 <a href="#about" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
                 <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors font-medium">Testimonials</a>
-                <a href="#contact" class="btn-primary">Register Now</a>
+                <a href="#contact" class="btn-primary">Get Free Consultation</a>
             </div>
 
             <button type="button" class="lg:hidden text-gray-700" id="mobile-menu-btn">
@@ -293,7 +293,7 @@
                         Elite youth soccer camps and training programs designed to elevate your child's game. Expert coaching, skill development, and confidence building in a fun, supportive environment.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                        <a href="#contact" class="btn-solid text-center">Register Now</a>
+                        <a href="#contact" class="btn-solid text-center text-lg px-8 py-4">Get Your Free Consultation →</a>
                         <a href="#features" class="btn-outline text-center">View Programs</a>
                     </div>
                     <div class="flex items-center gap-6 text-sm text-gray-600">
@@ -692,8 +692,8 @@
             <p class="text-lg md:text-xl text-gray-100 font-light mb-10 leading-relaxed max-w-2xl mx-auto">
                 Don't let your child's soccer skills plateau over summer break. Secure your spot in Raleigh's premier youth soccer training program today. Limited spaces available!
             </p>
-            <a href="#contact" class="btn-solid bg-primary border-primary text-white hover:bg-white hover:text-primary">
-                Register for Summer Training
+            <a href="#contact" class="btn-solid bg-primary border-primary text-white hover:bg-white hover:text-primary text-lg px-8 py-4">
+                Get Your Free Consultation Now →
             </a>
         </div>
     </section>
@@ -763,18 +763,38 @@
 
           <!-- Form Column -->
           <div class="rounded shadow-lg p-8" style="background: #252525;">
-            <form action="https://formspree.io/f/mkogdqaz" method="POST" id="contact-form" class="space-y-5">
-              <input type="hidden" name="redirect" value="false">
+            <div class="mb-6">
+              <h3 class="text-2xl font-bold mb-2" style="color: #ffffff;">Request Additional Information</h3>
+              <p class="text-sm opacity-75" style="color: #ffffff;">Fill out the form below and we'll get back to you within 24 hours</p>
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="space-y-5">
+              <!-- Web3Forms Access Key -->
+              <input type="hidden" name="access_key" value="a31c8d2c-8c9f-45f3-96c1-506100a92567">
+
+              <!-- Redirect after submission -->
+              <input type="hidden" name="redirect" value="https://summersoccerraleigh.com/thank-you.html">
+
+              <!-- Email to send to -->
+              <input type="hidden" name="email" value="marcus@smallgroupsoccer.com">
+
+              <!-- Subject line -->
+              <input type="hidden" name="subject" value="New Soccer Training Inquiry - Raleigh">
+
+              <!-- From name (will show in email) -->
+              <input type="hidden" name="from_name" value="Raleigh Soccer Training Site">
+
+              <!-- Honeypot for spam protection -->
               <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
               <div>
-                <label for="name" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Name *</label>
-                <input 
-                  type="text" 
-                  name="name" 
-                  id="name" 
-                  required 
-                  class="w-full px-4 py-3 border rounded outline-none transition-all" 
+                <label for="parent_name" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Parent/Guardian Name *</label>
+                <input
+                  type="text"
+                  name="parent_name"
+                  id="parent_name"
+                  required
+                  class="w-full px-4 py-3 border rounded outline-none transition-all"
                   style="border-color: #3f3f3f; background: #2d2d2d; color: #ffffff;"
                   onfocus="this.style.borderColor='#FF5A5F'; this.style.boxShadow='0 0 0 3px #FF5A5F20'"
                   onblur="this.style.borderColor='#3f3f3f'; this.style.boxShadow='none'"
@@ -782,13 +802,58 @@
                 >
               </div>
 
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label for="child_name" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Player's Name *</label>
+                  <input
+                    type="text"
+                    name="child_name"
+                    id="child_name"
+                    required
+                    class="w-full px-4 py-3 border rounded outline-none transition-all"
+                    style="border-color: #3f3f3f; background: #2d2d2d; color: #ffffff;"
+                    onfocus="this.style.borderColor='#FF5A5F'; this.style.boxShadow='0 0 0 3px #FF5A5F20'"
+                    onblur="this.style.borderColor='#3f3f3f'; this.style.boxShadow='none'"
+                    placeholder="Child's name"
+                  >
+                </div>
+
+                <div>
+                  <label for="child_age" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Player's Age *</label>
+                  <select
+                    name="child_age"
+                    id="child_age"
+                    required
+                    class="w-full px-4 py-3 border rounded outline-none transition-all"
+                    style="border-color: #3f3f3f; background: #2d2d2d; color: #ffffff;"
+                    onfocus="this.style.borderColor='#FF5A5F'; this.style.boxShadow='0 0 0 3px #FF5A5F20'"
+                    onblur="this.style.borderColor='#3f3f3f'; this.style.boxShadow='none'"
+                  >
+                    <option value="">Select age</option>
+                    <option value="6">6 years old</option>
+                    <option value="7">7 years old</option>
+                    <option value="8">8 years old</option>
+                    <option value="9">9 years old</option>
+                    <option value="10">10 years old</option>
+                    <option value="11">11 years old</option>
+                    <option value="12">12 years old</option>
+                    <option value="13">13 years old</option>
+                    <option value="14">14 years old</option>
+                    <option value="15">15 years old</option>
+                    <option value="16">16 years old</option>
+                    <option value="17">17 years old</option>
+                    <option value="18+">18+ years old</option>
+                  </select>
+                </div>
+              </div>
+
               <div>
-                <label for="email" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Email *</label>
-                <input 
-                  type="email" 
-                  name="email" 
-                  id="email" 
-                  required 
+                <label for="contact_email" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Your Email *</label>
+                <input
+                  type="email"
+                  name="contact_email"
+                  id="contact_email"
+                  required
                   class="w-full px-4 py-3 border rounded outline-none transition-all"
                   style="border-color: #3f3f3f; background: #2d2d2d; color: #ffffff;"
                   onfocus="this.style.borderColor='#FF5A5F'; this.style.boxShadow='0 0 0 3px #FF5A5F20'"
@@ -798,81 +863,137 @@
               </div>
 
               <div>
-                <label for="message" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Message *</label>
-                <textarea 
-                  name="message" 
-                  id="message" 
-                  required 
-                  rows="4" 
+                <label for="phone" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Phone Number *</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  class="w-full px-4 py-3 border rounded outline-none transition-all"
+                  style="border-color: #3f3f3f; background: #2d2d2d; color: #ffffff;"
+                  onfocus="this.style.borderColor='#FF5A5F'; this.style.boxShadow='0 0 0 3px #FF5A5F20'"
+                  onblur="this.style.borderColor='#3f3f3f'; this.style.boxShadow='none'"
+                  placeholder="(919) 555-1234"
+                >
+              </div>
+
+              <div>
+                <label for="location" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Preferred Location *</label>
+                <select
+                  name="location"
+                  id="location"
+                  required
+                  class="w-full px-4 py-3 border rounded outline-none transition-all"
+                  style="border-color: #3f3f3f; background: #2d2d2d; color: #ffffff;"
+                  onfocus="this.style.borderColor='#FF5A5F'; this.style.boxShadow='0 0 0 3px #FF5A5F20'"
+                  onblur="this.style.borderColor='#3f3f3f'; this.style.boxShadow='none'"
+                >
+                  <option value="">Select location</option>
+                  <option value="North Raleigh">North Raleigh</option>
+                  <option value="Cary">Cary</option>
+                  <option value="Apex">Apex</option>
+                  <option value="Wake Forest">Wake Forest</option>
+                  <option value="Downtown Raleigh">Downtown Raleigh</option>
+                  <option value="No Preference">No Preference</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="program_interest" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Program Interest *</label>
+                <select
+                  name="program_interest"
+                  id="program_interest"
+                  required
+                  class="w-full px-4 py-3 border rounded outline-none transition-all"
+                  style="border-color: #3f3f3f; background: #2d2d2d; color: #ffffff;"
+                  onfocus="this.style.borderColor='#FF5A5F'; this.style.boxShadow='0 0 0 3px #FF5A5F20'"
+                  onblur="this.style.borderColor='#3f3f3f'; this.style.boxShadow='none'"
+                >
+                  <option value="">Select program</option>
+                  <option value="Small Group Training">Small Group Training</option>
+                  <option value="Team Training">Team Training</option>
+                  <option value="Soccer Clinics">Soccer Clinics</option>
+                  <option value="Summer Camps">Summer Camps</option>
+                  <option value="Not Sure - Just Exploring">Not Sure - Just Exploring</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-semibold mb-2" style="color: #ffffff;">Additional Comments (Optional)</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
                   class="w-full px-4 py-3 border rounded outline-none resize-none transition-all"
                   style="border-color: #3f3f3f; background: #2d2d2d; color: #ffffff;"
                   onfocus="this.style.borderColor='#FF5A5F'; this.style.boxShadow='0 0 0 3px #FF5A5F20'"
                   onblur="this.style.borderColor='#3f3f3f'; this.style.boxShadow='none'"
-                  placeholder="Your message..."
+                  placeholder="Tell us about your child's experience level, goals, or any questions..."
                 ></textarea>
               </div>
 
-              <button 
-                type="submit" 
-                id="submit-btn-split"
-                class="w-full font-semibold py-3 px-6 rounded transition-all duration-200 shadow-md hover:shadow-lg"
-                style="background: transparent; border: 2px solid #FF5A5F; color: #FF5A5F;"
-                onmouseover="this.style.opacity='0.9'"
-                onmouseout="this.style.opacity='1'"
+              <button
+                type="submit"
+                id="submit-btn"
+                class="w-full font-semibold py-4 px-6 rounded transition-all duration-200 shadow-md hover:shadow-xl text-lg"
+                style="background: #FF5A5F; border: 2px solid #FF5A5F; color: #ffffff;"
+                onmouseover="this.style.background='#ff4449'; this.style.transform='translateY(-2px)'"
+                onmouseout="this.style.background='#FF5A5F'; this.style.transform='translateY(0)'"
               >
-                Send Message
+                Request Additional Information
               </button>
-              
-              <div id="form-message-split" class="mt-4 p-4 rounded hidden" style="background: #10b981; color: #ffffff;">
-                ✓ Message sent successfully!
-              </div>
+
+              <div id="form-message" class="mt-4 p-4 rounded hidden"></div>
             </form>
-            
+
             <script>
               (function() {
                 const form = document.getElementById('contact-form');
-                const submitBtn = document.getElementById('submit-btn-split');
-                const messageDiv = document.getElementById('form-message-split');
-                
+                const submitBtn = document.getElementById('submit-btn');
+                const messageDiv = document.getElementById('form-message');
+
                 form.addEventListener('submit', async (e) => {
                   e.preventDefault();
                   submitBtn.disabled = true;
                   submitBtn.textContent = 'Sending...';
-                  
+                  submitBtn.style.opacity = '0.7';
+
                   try {
                     const formData = new FormData(form);
-                    const response = await fetch('https://formspree.io/f/mkogdqaz', {
+                    const response = await fetch('https://api.web3forms.com/submit', {
                       method: 'POST',
                       body: formData
                     });
-                    
+
                     const result = await response.json();
-                    
+
                     if (result.success) {
-                      form.reset();
+                      messageDiv.style.background = '#10b981';
+                      messageDiv.style.color = '#ffffff';
+                      messageDiv.textContent = '✓ Thank you! We\'ll contact you within 24 hours.';
                       messageDiv.classList.remove('hidden');
-                      submitBtn.textContent = 'Sent';
-                      
+                      form.reset();
+                      submitBtn.textContent = 'Submitted Successfully!';
+
+                      // Redirect to thank you page after 2 seconds
                       setTimeout(() => {
-                        messageDiv.classList.add('hidden');
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = 'Send Message';
-                      }, 5000);
+                        window.location.href = 'thank-you.html';
+                      }, 2000);
                     } else {
                       throw new Error('Submission failed');
                     }
                   } catch (error) {
                     submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send Message';
+                    submitBtn.textContent = 'Request Additional Information';
+                    submitBtn.style.opacity = '1';
                     messageDiv.style.background = '#ef4444';
-                    messageDiv.textContent = '✗ Failed to send. Please try again.';
+                    messageDiv.style.color = '#ffffff';
+                    messageDiv.textContent = '✗ Failed to send. Please try again or call (919) 230-1210.';
                     messageDiv.classList.remove('hidden');
-                    
+
                     setTimeout(() => {
                       messageDiv.classList.add('hidden');
-                      messageDiv.style.background = '#10b981';
-                      messageDiv.textContent = '✓ Message sent successfully!';
-                    }, 5000);
+                    }, 7000);
                   }
                 });
               })();
@@ -905,7 +1026,7 @@
                     <ul class="space-y-3">
                         <li><a href="programs.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Programs</a></li>
                         <li><a href="locations.html" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Locations</a></li>
-                        <li><a href="#contact" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Register</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Get Consultation</a></li>
                         <li><a href="#testimonials" class="text-gray-300 hover:text-primary transition-colors duration-300 font-light">Testimonials</a></li>
                     </ul>
                 </div>
